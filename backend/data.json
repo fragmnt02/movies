@@ -1,0 +1,17 @@
+[
+    {
+        "title": "El Padrino",
+        "image": "https://www.cineytele.com/wp-content/uploads/2018/06/el_padrino_poster.jpg",
+        "rate": 9.5 
+    },
+    {
+        "title": "Tiempos violentos",
+        "image": "https://static.wikia.nocookie.net/wiki-doblaje-espana/images/c/cb/Pulpfictionposter.jpg/revision/latest?cb=20200229115619&path-prefix=es",
+        "rate": 8.5 
+    },
+    {
+        "title": "Forrest Gump",
+        "image": "https://pics.filmaffinity.com/Forrest_Gump-212765827-large.jpg",
+        "rate": 9.3
+    }
+]

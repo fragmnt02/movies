@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from 'styled-components';
+import * as Styles from 'components/MovieList/styles';
 
 export const MovieList = ({children}) => {
     return(

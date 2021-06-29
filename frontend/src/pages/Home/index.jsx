@@ -1,20 +1,33 @@
-import React from 'react';
-import { gql } from "@apollo/client";
-import {Movie} from '../../components/Movie';
-import { MovieList } from '../../components/MovieList';
+import React, { useState, useEffect } from 'react';
+import { gql, useQuery } from "@apollo/client";
+import { Movie } from 'components/Movie';
+import { MovieList } from 'components/MovieList';
 
 const GET_MOVIES_GQL = gql`
     query {
         movies {
             title
-            rate
-            image
         }
     }
 `;
 
 
 export const Home = () => {
+    const [movies, setMovies] = useState([]);
+    const { data, error, loading } = useQuery(GET_MOVIES_GQL);
+
+    useEffect(() => {
+        if (!loading) {
+            if (error) {
+                throw new Error(error);
+            }
+            setMovies(data.movies);
+        }
+    }, [loading]);
+
+    if (loading) {
+        return <div>Loading...</div>
+    }
     return (
         <div>
             <MovieList>

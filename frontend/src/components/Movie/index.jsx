@@ -1,5 +1,5 @@
 import React from 'react';
-import Styles from './style';
+import * as Styles from 'components/Movie/style';
 import { gql } from "@apollo/client";
 
 const DELETE_MOVIE_GQL = gql`

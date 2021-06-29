@@ -1,6 +1,6 @@
 import { ApolloServer } from 'apollo-server';
-import MovieResolvers from './graphql/movies/resolvers.js';
-import MovieSchemas from './graphql/movies/schema.js';
+import MovieResolvers from './graphql/resolvers.js';
+import MovieSchemas from './graphql/schema.js';
 
 const typeDefs = MovieSchemas;
 

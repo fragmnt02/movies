@@ -8,4 +8,4 @@ Extra point:
 Integrate with real databse
 
 ## FRONTEND
-
+1. Terminar el frontend
